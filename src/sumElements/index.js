@@ -11,7 +11,15 @@
  * sumElements([Infinity, NaN, 1]); // 1
  */
 const sumElements = arr => {
-  /* your logic here...*/
+  let total = 0;
+  for(var i in arr) 
+  { 
+if isFinite(Number(arr[i]))
+{
+total += Number(arr[i]); 
+}
+}
+  return total;
 };
 
 export default sumElements;
